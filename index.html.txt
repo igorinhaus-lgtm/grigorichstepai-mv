@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Машинная вышивка «МВ» — ручная работа, татарский орнамент</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="#hero" class="logo">
+      <img src="logo.png" alt="Логотип МВ">
+      <span class="logo-text">Студия вышивки «МВ»</span>
+    </a>
+    <nav class="nav">
+      <a href="#services">Услуги</a>
+      <a href="#gallery">Работы</a>
+      <a href="#prices">Цены</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Услуги</a>
+      <a href="#gallery">Работы</a>
+      <a href="#prices">Цены</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Эксклюзивная <span class="gold">машинная вышивка</span> с душой ручной работы</h1>
+      <p>Создаём кепки, полотенца, фартуки и халаты с аутентичными татарскими орнаментами. Каждое изделие — уникальное, выполненное с вниманием к каждой детали.</p>
+      <a href="#prices" class="btn">Смотреть цены</a>
+      <a href="#contacts" class="btn btn-outline">Связаться</a>
+    </div>
+    <div class="hero-photo">
+      <img src="svetlana-cap.jpg" alt="Светлана в кепке с вышивкой">
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Что мы <span class="gold">вышиваем</span></h2>
+    <div class="services-grid">
+      <div class="card"><h3>Кепки и головные уборы</h3><p>Бейсболки, кепки, тюбетейки с индивидуальной вышивкой.</p></div>
+      <div class="card"><h3>Полотенца</h3><p>От 30×50 до банных 70×140 см, вафельные и махровые.</p></div>
+      <div class="card"><h3>Фартуки</h3><p>Кухонные и рабочие фартуки с вашим дизайном или логотипом.</p></div>
+      <div class="card"><h3>Халаты</h3><p>Домашние и банные халаты с изящным орнаментом.</p></div>
+      <div class="card"><h3>Татарский орнамент</h3><p>Тюльпаны, кондиционные узоры — аутентичная палитра.</p></div>
+      <div class="card"><h3>Брендирование</h3><p>Логотипы и надписи на одежде и текстиле для бизнеса.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2 class="section-title">Наши <span class="gold">работы</span></h2>
+    <div class="gallery-grid">
+      <figure><img src="cap1.jpg" alt="Кепка с вышивкой"><figcaption>Кепка с орнаментом</figcaption></figure>
+      <figure><img src="cap2.jpg" alt="Кепка"><figcaption>Именная кепка</figcaption></figure>
+      <figure><img src="towel1.jpg" alt="Полотенце с вышивкой"><figcaption>Полотенце 40×70</figcaption></figure>
+      <figure><img src="towel2.jpg" alt="Банное полотенце"><figcaption>Банное полотенце</figcaption></figure>
+      <figure><img src="apron1.jpg" alt="Фартук с вышивкой"><figcaption>Кухонный фартук</figcaption></figure>
+      <figure><img src="robe1.jpg" alt="Халат с вышивкой"><figcaption>Домашний халат</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="prices" class="prices">
+  <div class="container">
+    <h2 class="section-title">Стоимость <span class="gold">вышивки</span></h2>
+    <div class="price-plate">
+      <div class="price-item price-cap">
+        <span class="price-name">Кепка с вышивкой</span>
+        <span class="price-value">750 ₽</span>
+      </div>
+      <div class="price-towels">
+        <span class="price-name">Полотенце с вышивкой</span>
+        <ul>
+          <li>30×50 см — <b>450 ₽</b></li>
+          <li>40×70 см — <b>650 ₽</b></li>
+          <li>50×90 см — <b>950 ₽</b></li>
+          <li>Банное 70×140 см — <b>1400 ₽</b></li>
+        </ul>
+      </div>
+      <div class="price-item price-apron">
+        <span class="price-name">Фартук</span>
+        <span class="price-value">850–1200 ₽</span>
+        <span class="price-note">(цена зависит от дизайна)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="container">
+    <h2 class="section-title">Отзывы <span class="gold">клиентов</span></h2>
+    <div class="reviews-scroll">
+      <div class="review"><p>Вышили полотенца на свадьбу — восторг! Качество супер, орнамент ровный.</p><span>— Алия, Казань</span></div>
+      <div class="review"><p>Заказывала кепку с именем сына. Сделали быстро и аккуратно. Спасибо!</p><span>— Гульнара</span></div>
+      <div class="review"><p>Фартуки для кафе — все гости спрашивают, где брали. Очень красиво.</p><span>— Марсель</span></div>
+      <div class="review"><p>Банные халаты с логотипом — лучшая инвестиция в подарки. Браво мастерам!</p><span>— Елена</span></div>
+      <div class="review"><p>Ручная работа чувствуется. Вышивка плотная, цвета сочные. Рекомендую!</p><span>— Ильдар</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 class="section-title">Частые <span class="gold">вопросы</span></h2>
+    <details class="faq-item"><summary>Сколько времени занимает вышивка?</summary><p>Обычно 1–3 дня в зависимости от сложности и объёма заказа.</p></details>
+    <details class="faq-item"><summary>Можно ли вышить свой дизайн или логотип?</summary><p>Да! Присылайте макет, мы конвертируем его в формат машинной вышивки.</p></details>
+    <details class="faq-item"><summary>Есть ли минимальный заказ?</summary><p>Для пробной вышивки — нет. Для корпоративных заказов — от 5 изделий.</p></details>
+    <details class="faq-item"><summary>Как ухаживать за изделиями с вышивкой?</summary><p>Стирайте на деликатном режиме, вывернув наизнанку, без отбеливателя.</p></details>
+    <details class="faq-item"><summary>Делаете ли доставку?</summary><p>Да, отправляем по всей России почтой и СДЭК.</p></details>
+  </div>
+</section>
+
+<section id="contacts" class="contacts">
+  <div class="container contacts-inner">
+    <div class="contacts-info">
+      <img src="logo.png" alt="Логотип" class="contact-logo">
+      <h2 class="section-title">Контакты</h2>
+      <p><b>Адрес:</b> г. Казань, ул. Адоратского, д. 3</p>
+      <p><b>Режим:</b> ежедневно 9:00–20:00</p>
+      <p><b>Мы в VK:</b> vk.com/embroidery_mv</p>
+      <p><b>WhatsApp / Telegram:</b> по запросу в мессенджере</p>
+    </div>
+    <div class="contacts-map">
+      <iframe src="https://www.google.com/maps?q=Казань,+ул.+Адоратского,+3&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 Студия вышивки «МВ» — ручная работа и эксклюзивная машинная вышивка.</p>
+  </div>
+</footer>
+
+<script>
+const burger = document.getElementById('burger');
+const menu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => menu.classList.toggle('open'));
+</script>
+</body>
+</html>

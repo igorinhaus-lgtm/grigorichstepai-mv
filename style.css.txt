@@ -1,0 +1,182 @@
+ ===== БАЗА ===== 
+{margin0;padding0;box-sizingborder-box;}
+html{scroll-behaviorsmooth;}
+body{
+  font-family'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  color#f2efe6;
+   Татарский национальный фон (изумруд + тёмный, НЕ красный) 
+  background
+    radial-gradient(circle at 10% 20%, rgba(34,120,95,.35), transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(198,164,82,.18), transparent 50%),
+    repeating-linear-gradient(45deg, rgba(240,230,200,.05) 0 2px, transparent 2px 14px),
+    linear-gradient(160deg, #08231d 0%, #0e3b31 45%, #06201a 100%);
+  background-attachmentfixed;
+  line-height1.6;
+}
+a{colorinherit;text-decorationnone;}
+img{max-width100%;displayblock;}
+.container{max-width1180px;margin0 auto;padding0 22px;}
+.gold{color#d9b96a;}
+
+ ===== ШАПКА ===== 
+.header{
+  positionsticky;top0;z-index50;
+  backgroundrgba(6,32,26,.82);
+  backdrop-filterblur(8px);
+  border-bottom1px solid rgba(217,185,106,.25);
+}
+.header-inner{displayflex;align-itemscenter;justify-contentspace-between;padding-top14px;padding-bottom14px;}
+.logo{displayflex;align-itemscenter;gap12px;font-weight700;letter-spacing.5px;}
+.logo img{width46px;height46px;border-radius50%;border2px solid #d9b96a;object-fitcover;}
+.logo-text{font-size1.05rem;}
+.nav{displayflex;gap26px;font-size.98rem;}
+.nav a{positionrelative;transitioncolor .2s;}
+.nav ahover{color#d9b96a;}
+.burger{displaynone;backgroundnone;bordernone;color#f2efe6;font-size1.6rem;cursorpointer;}
+.mobile-menu{displaynone;flex-directioncolumn;gap14px;padding16px 22px;backgroundrgba(6,32,26,.95);}
+.mobile-menu.open{displayflex;}
+
+ ===== ГЛАВНЫЙ БЛОК (фон — полупрозрачное фото с кепками) ===== 
+.hero{
+  positionrelative;
+   полупрозрачный фон с фото кепок поверх татарского фона 
+  background
+    linear-gradient(90deg, rgba(6,32,26,.92) 0%, rgba(8,40,32,.65) 55%, rgba(6,32,26,.25) 100%),
+    url('caps-bg.jpg') centercover no-repeat;
+  padding90px 0 90px;
+}
+.hero-inner{displayflex;gap48px;align-itemscenter;}
+.hero-text{flex1.2;}
+.hero-text h1{font-size2.6rem;line-height1.15;margin-bottom20px;text-shadow0 2px 12px rgba(0,0,0,.5);}
+.hero-text p{font-size1.12rem;margin-bottom30px;max-width560px;}
+.btn{
+  displayinline-block;background#d9b96a;color#08231d;font-weight700;
+  padding13px 28px;border-radius30px;margin-right14px;transitiontransform .2s, background .2s;
+}
+.btnhover{transformtranslateY(-2px);background#e6c983;}
+.btn-outline{backgroundtransparent;border2px solid #d9b96a;color#d9b96a;}
+.btn-outlinehover{background#d9b96a;color#08231d;}
+ фото Светланы в КРУГЛОЙ рамке 
+.hero-photo{flex0 0 360px;}
+.hero-photo img{
+  width360px;height360px;object-fitcover;
+  border-radius50%;
+  border6px solid #d9b96a;
+  box-shadow0 12px 40px rgba(0,0,0,.55);
+  margin-leftauto;
+}
+
+ ===== УСЛУГИ ===== 
+.services{padding70px 0;}
+.section-title{font-size2rem;text-aligncenter;margin-bottom44px;}
+.services-grid{displaygrid;grid-template-columnsrepeat(3,1fr);gap26px;}
+.card{
+  backgroundrgba(240,230,200,.06);
+  border1px solid rgba(217,185,106,.3);
+  border-radius16px;padding26px 24px;
+  transitiontransform .2s, background .2s;
+}
+.cardhover{transformtranslateY(-4px);backgroundrgba(240,230,200,.1);}
+.card h3{color#d9b96a;margin-bottom10px;font-size1.15rem;}
+.card p{font-size.98rem;color#e6dfcd;}
+
+ ===== ГАЛЕРЕЯ ===== 
+.gallery{padding60px 0;backgroundrgba(0,0,0,.18);}
+.gallery-grid{displaygrid;grid-template-columnsrepeat(3,1fr);gap22px;}
+.gallery-grid figure{
+  backgroundrgba(240,230,200,.05);
+  border1px solid rgba(217,185,106,.25);
+  border-radius14px;overflowhidden;
+}
+.gallery-grid img{height230px;width100%;object-fitcover;}
+.gallery-grid figcaption{padding12px 16px;font-weight600;color#e6dfcd;text-aligncenter;}
+
+ ===== ЦЕНЫ — красивая плашка ===== 
+.prices{padding70px 0;}
+.price-plate{
+  max-width820px;margin0 auto;
+  backgroundlinear-gradient(135deg, rgba(217,185,106,.12), rgba(217,185,106,.04));
+  border2px solid #d9b96a;border-radius22px;
+  padding40px 46px;positionrelative;overflowhidden;
+  box-shadow0 14px 50px rgba(0,0,0,.45);
+}
+.price-platebefore{
+  content'';positionabsolute;top-40px;right-40px;width190px;height190px;
+  backgroundradial-gradient(circle, rgba(217,185,106,.3), transparent 70%);
+}
+.price-item{displayflex;justify-contentspace-between;align-itemsbaseline;flex-wrapwrap;gap8px;margin-bottom24px;}
+.price-name{font-size1.35rem;font-weight700;color#f2efe6;}
+.price-value{font-size1.8rem;font-weight800;color#d9b96a;text-shadow0 0 18px rgba(217,185,106,.5);}
+.price-note{width100%;font-size.92rem;color#c9c2ae;}
+.price-towels{border-top1px dashed rgba(217,185,106,.4);border-bottom1px dashed rgba(217,185,106,.4);padding22px 0;margin-bottom24px;}
+.price-towels .price-name{displayblock;margin-bottom14px;font-size1.25rem;}
+.price-towels ul{list-stylenone;}
+.price-towels li{
+  displayflex;justify-contentspace-between;max-width460px;
+  padding7px 0;font-size1.05rem;color#e6dfcd;
+}
+.price-towels li b{color#d9b96a;font-size1.15rem;}
+.price-apron .price-value{font-size1.6rem;}
+.price-apron .price-note{widthauto;}
+
+ ===== ОТЗЫВЫ (горизонтальный скролл) ===== 
+.reviews{padding60px 0;backgroundrgba(0,0,0,.18);}
+.reviews-scroll{
+  displayflex;gap20px;overflow-xauto;
+  padding-bottom16px;scroll-snap-typex mandatory;
+}
+.reviews-scroll-webkit-scrollbar{height8px;}
+.reviews-scroll-webkit-scrollbar-thumb{background#d9b96a;border-radius8px;}
+.review{
+  flex0 0 300px;scroll-snap-alignstart;
+  backgroundrgba(240,230,200,.06);
+  border1px solid rgba(217,185,106,.3);
+  border-radius16px;padding24px;
+}
+.review p{font-styleitalic;color#e6dfcd;margin-bottom14px;}
+.review span{color#d9b96a;font-weight600;}
+
+ ===== FAQ ===== 
+.faq{padding70px 0;}
+.faq-item{
+  backgroundrgba(240,230,200,.05);
+  border1px solid rgba(217,185,106,.25);
+  border-radius12px;margin-bottom12px;padding18px 24px;cursorpointer;
+}
+.faq-item summary{font-weight700;font-size1.08rem;color#d9b96a;cursorpointer;}
+.faq-item p{padding-top12px;color#e6dfcd;}
+
+ ===== КОНТАКТЫ (полупрозрачный фон с кепками) ===== 
+.contacts{
+  positionrelative;
+  background
+    linear-gradient(180deg, rgba(6,32,26,.9) 0%, rgba(6,32,26,.82) 100%),
+    url('caps-bg.jpg') centercover no-repeat;
+  padding70px 0;
+}
+.contacts-inner{displayflex;gap48px;align-itemscenter;}
+.contacts-info{flex1;}
+.contact-logo{width60px;height60px;border-radius50%;border2px solid #d9b96a;margin-bottom18px;object-fitcover;}
+.contacts-info p{margin-bottom12px;font-size1.05rem;}
+.contacts-info .section-title{text-alignleft;margin-bottom22px;}
+.contacts-map{flex1;}
+.contacts-map iframe{width100%;height340px;border0;border-radius16px;filtersepia(.2) saturate(.9);}
+
+ ===== ПОДВАЛ ===== 
+.footer{border-top1px solid rgba(217,185,106,.25);padding26px 0;text-aligncenter;color#c9c2ae;font-size.95rem;}
+
+ ===== АДАПТИВ ===== 
+@media(max-width900px){
+  .hero-inner,.contacts-inner{flex-directioncolumn;text-aligncenter;}
+  .hero-photo img{margin0 auto;}
+  .nav{displaynone;}
+  .burger{displayblock;}
+  .services-grid,.gallery-grid{grid-template-columnsrepeat(2,1fr);}
+}
+@media(max-width560px){
+  .hero-text h1{font-size1.9rem;}
+  .services-grid,.gallery-grid{grid-template-columns1fr;}
+  .hero-photo{flex-basisauto;}
+  .hero-photo img{width260px;height260px;}
+  .price-plate{padding26px 24px;}
+}
